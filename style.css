@@ -1,0 +1,37 @@
+body {
+  margin: 0; padding: 0; font-family: Arial, sans-serif;
+  background: #0d0d0d; color: #fff;
+}
+header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem; background: #111; box-shadow: 0 0 10px #ff9800;
+}
+header a { color: #fff; margin: 0 10px; text-decoration: none; }
+.hero { text-align: center; padding: 3rem; background: linear-gradient(45deg,#1a1a1a,#000); }
+.products {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  gap: 1.5rem; padding: 2rem;
+}
+.product {
+  background: #1c1c1c; padding: 1rem; border-radius: 12px; text-align: center;
+  box-shadow: 0 0 15px #222;
+}
+.product img { width: 100%; border-radius: 10px; }
+button, .btn {
+  background: linear-gradient(90deg,#ff9800,#ffb84d);
+  color: #000; border: none; padding: 10px 20px;
+  border-radius: 20px; cursor: pointer; font-weight: bold;
+  transition: all 0.3s ease; box-shadow: 0 0 10px #ff9800;
+}
+button:hover, .btn:hover {
+  background: linear-gradient(90deg,#ffb84d,#ff9800);
+  box-shadow: 0 0 20px #ffb84d;
+}
+footer {
+  display: flex; justify-content: space-around; padding: 1rem; background: #111;
+  box-shadow: 0 -2px 10px #ff9800;
+}
+form { display: flex; flex-direction: column; max-width: 300px; margin: auto; gap: 10px; }
+input, select {
+  padding: 8px; border: none; border-radius: 6px; outline: none;
+}
